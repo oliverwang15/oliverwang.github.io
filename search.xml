@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>我是如何安装这个博客的</title>
+    <url>/1/</url>
+    <content><![CDATA[<p>一次偶然的机会，我在网上看到了别人用Hexo框架搭建的博客觉得很新奇很好玩。于是就通过网上查找到的资料和现有的资源搭建了这一个基于Hexo框架的博客。</p>
+<a id="more"></a>
+<hr>
+<p>具体搭建教程如下</p>
+<p><a href="/2/index.html">Hexo安装教程一： Hexo的安装及部署</a></p>
+<p><a href="/3/index.html">Hexo安装教程二： Hexo功能添加及NexT主题应用</a></p>
+<p><a href="/4/index.html">Hexo安装教程三： NexT主题的进阶配置</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+        <category>NexT</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo安装教程二： Hexo功能添加及NexT主题应用</title>
+    <url>/3/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Hexo</category>
+        <category>NexT</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo安装教程三： NexT主题的进阶配置</title>
+    <url>/4/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Hexo</category>
+        <category>NexT</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo安装教程一： Hexo的安装及部署</title>
+    <url>/2/</url>
+    <content><![CDATA[<p>Hexo 博客的安装部分主要参考了<a href="https://11.tt/posts/2018/set-up-hexo-with-coding-and-github/" target="_blank" rel="noopener"> 基于Hexo+Coding+Github搭建个人博客的全过程</a>以及<a href="https://www.cnblogs.com/chuangshaogreat/p/8698625.html" target="_blank" rel="noopener">Windows下使用Hexo+GithubPage搭建博客</a>这两篇文章，部分的图片也来自这两篇文章。在此对<a href="https://github.com/miaia" target="_blank" rel="noopener">Miaia</a>和<a href="https://github.com/Hunter-Zack" target="_blank" rel="noopener">Zackcheung</a>两位大佬表示感谢，大家有兴趣也可以去光顾一下他们的个人博客。</p>
+<p>本文的配置是基于Win10操作系统的，Linux和Mac OS系统的教程也类似，各位可以自行百度。</p>
+<a id="more"></a>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>前往<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js官网</a>选择合适的版本下载即可（建议选择左边LTS的版本），在<a href="https://www.baidu.com/s?ie=UTF-8&amp;wd=cmd" target="_blank" rel="noopener">命令行</a>中输入 <code>node -v</code>如果出现类似下图的版本号则说明安装成功。</p>
+<p><img src="2/nodejs.jpg" alt></p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>前往<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git官网</a>选择合适的版本下载即可。</p>
+<p><img src="2/git1.jpg" alt></p>
+<p><img src="2/git2.jpg" alt></p>
+<p><img src="2/git3.jpg" alt></p>
+<p><img src="2/git4.jpg" alt></p>
+<p><img src="2/git5.jpg" alt></p>
+<p>在命令行中输入 <code>git –version</code>如果出现类似下图的版本号则说明安装成功。</p>
+<p><img src="2/git_ok.jpg" alt></p>
+<h2 id="安装博客"><a href="#安装博客" class="headerlink" title="安装博客"></a>安装博客</h2><p>首先在本地合适的地方新建一个叫Blog（或者其他名字）文件夹，文件右键，选择<strong>Git Bash Here</strong>。</p>
+<p><img src="2/blog1.gif" alt></p>
+<p>在弹出的命令行中输入<code>npm install -g hexo</code>。（安装过程中可能会出现<code>WARN</code>开头的提示，这是有些内容可能不兼容Window造成的。但并不影响最终的实际使用。）安装完毕之后在命令行输入<code>hexo</code>如果出现类似下图的操作提示则证明安装成功。</p>
+<p><img src="2/blog2.jpg" alt></p>
+<p>接着在命令行中输入<code>hexo init hexo</code>来初始化hexo。初始化成功之后会显示如下图所示的<code>Start blogging with Hexo!</code>的字样。</p>
+<p><img src="2/blog4.jpg" alt></p>
+<p>接下来在命令行中输入<code>cd hexo</code>来进入到Hexo所在的文件夹中，再在命令行中输入<code>npm install</code>来安装必要的依赖。等待安装完成之后整个博客的基础安装部分就算完成了。如果想查看默认博客的效果，可以在命令行中输入<code>hexo g &amp;&amp; hexo s</code>。等待命令行出现如下所示的提示:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INFO  Start processing </span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<p>之后打开浏览器在地址栏中输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>，如果出现如下图所示的页面那么：</p>
+<p><strong>“恭喜你！你的Hexo博客已经安装成功了！”</strong></p>
+<p><img src="2/blog5.jpg" alt></p>
+<h1 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h1><p>（由于Git工具十分强大与便捷，所以原则上来说生成的Hexo博客可以被部署到几乎任何服务器上。百度上也有许多相关的教程这里我们选择部署到Github上，并将其作为能够通过固定链接访问的个人博客。）</p>
+<h2 id="配置GIthub"><a href="#配置GIthub" class="headerlink" title="配置GIthub"></a>配置GIthub</h2><p>首先需要在<a href="https://github.com/" target="_blank" rel="noopener">Github官网</a>上注册个人账号，然后单机右上角的<strong>“+”</strong>，再选择<strong>“new repository”</strong>。在页面中的<strong>“Repository name”</strong>中填入<strong>“你的用户名.github.io”</strong>(这里<strong>“.github.io”</strong>前面填写的用户名必须是你的用户名！不然无法正常使用)。其余的地方不用动！</p>
+<p>接着我们需要创建公钥，打开Git Bash输入如下命令：<code>ssh-keygen -t rsa -b 4096 -C &quot;你的GitHub账户邮箱&quot;</code>，成功后会如下图所示生成两个文件id_rsa 以及id_rsa.pub。</p>
+<p><img src="2/github1.jpg" alt></p>
+<p>之后用记事本打开id_rsa.pub文件，复制里面的内容。打开Github的页面并登录，单击右上角你的头像，选择Settings-&gt; SSH keys-&gt;New SSH key，将刚才复制的内容填入Key（Title的内容可以随便填）。然后用记事本打开hexo目录下配置文件_config.yml（如下图所示），并在最后的deploy属性中加入如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy：</span><br><span class="line">  type: git   </span><br><span class="line">  repository: git@github.com:你的用户名/你的用户名.github.io.git   </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p><img src="2/github2.jpg" alt></p>
+<p>保存好之后在右键选择<strong>Git Bash Here</strong>，在命令行中输入<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code>之后在浏览器的地址栏中输入<code>你的用户名.github.io</code>就能看到之前的那个页面啦！</p>
+<h2 id="注册个人域名（可选）"><a href="#注册个人域名（可选）" class="headerlink" title="注册个人域名（可选）"></a>注册个人域名（可选）</h2><hr>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1>]]></content>
+      <categories>
+        <category>Hexo</category>
+        <category>NexT</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何寻找城市所属的省份或是区县所属的城市</title>
+    <url>/%C2%96%E5%A6%82%E4%BD%95%E5%AF%BB%E6%89%BE%E5%9F%8E%E5%B8%82%E6%89%80%E5%B1%9E%E7%9A%84%E7%9C%81%E4%BB%BD%E6%88%96%E6%98%AF%E5%8C%BA%E5%8E%BF%E6%89%80%E5%B1%9E%E7%9A%84%E5%9F%8E%E5%B8%82/</url>
+    <content><![CDATA[<p>前几天在做数据分析的时候，有许多城市的数据但是需要按照省份来统计。但一个个查对应的省份可能过于繁琐，因此就写了一个函数来解决这个问题，代码如下：</p>
+<a id="more"></a>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">search_city</span><span class="params">(name=<span class="string">"上海"</span>,level=<span class="number">3</span>)</span>:</span></span><br><span class="line">    res=&#123;<span class="comment">#一个字典</span></span><br><span class="line">         &#125;</span><br><span class="line">    provinces=res[<span class="string">"districts"</span>][<span class="number">0</span>][<span class="string">"districts"</span>]</span><br><span class="line">    <span class="keyword">if</span> (level==<span class="number">1</span> <span class="keyword">or</span> level==<span class="number">2</span> <span class="keyword">or</span> level==<span class="number">3</span>): </span><br><span class="line">        res=[]</span><br><span class="line">        <span class="keyword">for</span> province <span class="keyword">in</span> provinces:</span><br><span class="line">            <span class="comment">#print("1")</span></span><br><span class="line">            cities=province[<span class="string">"districts"</span>]</span><br><span class="line">            province_name=province[<span class="string">"name"</span>]</span><br><span class="line">            <span class="keyword">if</span> (name <span class="keyword">in</span> province_name <span class="keyword">and</span> level==<span class="number">1</span>):</span><br><span class="line">                res.append(&#123;<span class="string">"province_name"</span>:province_name&#125;)</span><br><span class="line">            <span class="keyword">for</span> city <span class="keyword">in</span> cities:</span><br><span class="line">                districts=city[<span class="string">"districts"</span>]</span><br><span class="line">                city_name=city[<span class="string">"name"</span>]</span><br><span class="line">                <span class="keyword">if</span> (name <span class="keyword">in</span> city_name <span class="keyword">and</span> level==<span class="number">2</span>):</span><br><span class="line">                    res.append(&#123;<span class="string">"province_name"</span>:province_name,</span><br><span class="line">                                <span class="string">"city_name:"</span>:city_name&#125;)</span><br><span class="line">                <span class="keyword">for</span> district <span class="keyword">in</span> districts:</span><br><span class="line">                    district_name=district[<span class="string">"name"</span>]</span><br><span class="line">                    <span class="keyword">if</span> (name <span class="keyword">in</span> district_name <span class="keyword">and</span> level==<span class="number">3</span>):</span><br><span class="line">                        res.append(&#123;<span class="string">"province_name"</span>:province_name,</span><br><span class="line">                                    <span class="string">"city_name"</span>:city_name,</span><br><span class="line">                                    <span class="string">"district_name"</span>:district_name&#125;)</span><br><span class="line">        <span class="keyword">return</span> res</span><br><span class="line">    <span class="keyword">else</span>: </span><br><span class="line">        <span class="keyword">return</span> <span class="string">"请重新输入级别，1搜索省；2搜索市；3搜索县"</span></span><br></pre></td></tr></table></figure>
+<p>这个字典将附在文末，该字典也可以通过百度地图的api获取，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_data</span><span class="params">(keyword)</span>:</span></span><br><span class="line">    url=<span class="string">'http://api.map.baidu.com/api_region_search/v1/?keyword='</span>+\</span><br><span class="line">    keyword+<span class="string">'&amp;sub_admin=3&amp;ak=         '</span> </span><br><span class="line">    <span class="comment">#ak具体数值可以通过在https://lbsyun.baidu.com/注册得到，注册成功后控制台-应用管理-我的应用-创建应用</span></span><br><span class="line">    res=requests.get(url).json()</span><br><span class="line">    <span class="keyword">return</span> res</span><br><span class="line"></span><br><span class="line">res=get_data(<span class="string">"中国"</span>)</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">"china.json"</span>,<span class="string">"w+"</span>) <span class="keyword">as</span> p:</span><br><span class="line">    json.dump(res,p)</span><br></pre></td></tr></table></figure>
+<p>使用的时候只需要如下操作即可：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">"china.json"</span>,<span class="string">"r+"</span>) <span class="keyword">as</span> d:</span><br><span class="line">    res=json.load(d)</span><br></pre></td></tr></table></figure>
+<p>最后附上data_version为20201101的res数据的一部分:</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;<span class="attr">"status"</span>: <span class="number">0</span>, <span class="attr">"data_version"</span>: <span class="string">"20201101"</span>, <span class="attr">"result_size"</span>: <span class="number">1</span>, <span class="attr">"districts"</span>: [&#123;<span class="attr">"code"</span>: <span class="string">""</span>, <span class="attr">"name"</span>: <span class="string">"\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd"</span>, <span class="attr">"level"</span>: <span class="number">0</span>, <span class="attr">"districts"</span>: [&#123;<span class="attr">"code"</span>: <span class="string">""</span>, <span class="attr">"name"</span>: <span class="string">"\u5317\u4eac\u5e02"</span>, <span class="attr">"level"</span>: <span class="number">1</span>, <span class="attr">"districts"</span>: [&#123;<span class="attr">"code"</span>: <span class="string">""</span>, <span class="attr">"name"</span>: <span class="string">"\u5317\u4eac\u5e02"</span>, <span class="attr">"level"</span>: <span class="number">2</span>, <span class="attr">"districts"</span>: [&#123;<span class="attr">"code"</span>: <span class="string">""</span>, <span class="attr">"name"</span>: <span class="string">"\u4e1c\u57ce\u533a"</span>, <span class="attr">"level"</span>: <span class="number">3</span>, <span class="attr">"districts"</span>: []&#125;, ......</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Data Analysis</category>
+        <category>requests</category>
+      </categories>
+      <tags>
+        <tag>Data Analysis</tag>
+        <tag>requests</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>连接远程ray服务器</title>
+    <url>/%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8Bray%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+    <content><![CDATA[<p>​        最近在做强化学习课题的时候需要用Ray来进行平行计算，学校有提供服务器但是又想把家里的电脑捣鼓一下，于是尝试了一下用家里的电脑中的Python去调用学校服务器中的Ray服务，由于学校的服务器没有公网ip，所以只能通过ssh端口转发的方式实现，中间遇到了好多的坑，好在最后还是顺利解决了！</p>
+<a id="more"></a>
+<h4 id="一-安装ray"><a href="#一-安装ray" class="headerlink" title="一. 安装ray"></a>一. 安装ray</h4><ul>
+<li>在本地笔记本（A）和远程服务器（B）上同时安装 ray</li>
+<li><strong>本地笔记本（A）和远程服务器（B）上的 Python 版本必须相同，否则连接时会报错</strong></li>
+<li>（在多人共用服务器建议使用虚拟环境，以免环境版本冲突）</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span> pip install "ray[default]"     #用次命令可以同时安装dashboard方便管理</span><br></pre></td></tr></table></figure>
+<h4 id="二-在服务器上开启ray服务"><a href="#二-在服务器上开启ray服务" class="headerlink" title="二. 在服务器上开启ray服务"></a>二. 在服务器上开启ray服务</h4><ul>
+<li><p>如果服务器是集群的话可以先参考<a href="https://docs.ray.io/en/latest/cluster/cloud.html" target="_blank" rel="noopener">这个链接</a>里的命令搭建集群</p>
+</li>
+<li><p>接下来针对的是单服务器的情况，不过集群应该也可以在主节点（head）上进行相同的操作</p>
+</li>
+<li><p>在服务器上启动 ray 服务：</p>
+</li>
+</ul>
+<ul>
+<li><p>有以下两种方式可以选择：</p>
+<ol>
+<li>在命令行中输入 <code>$ ray start --head</code> (可以自定义一些东西详见官方文档)<br>会得到的输出结果</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Local node IP: 192.168.8.91</span><br><span class="line">2022-02-01 23:46:18,574 INFO services.py:1340 -- View the Ray dashboard at http://127.0.0.1:8265 </span><br><span class="line"><span class="meta">#</span># 可以在服务器（B）的浏览器中输入该链接浏览相关页面，也可以映射到本地（A）浏览，如何映射下文会提</span><br><span class="line">--------------------</span><br><span class="line">Ray runtime started.</span><br><span class="line">--------------------</span><br><span class="line"></span><br><span class="line">Next steps</span><br><span class="line">  To connect to this Ray runtime from another node, run</span><br><span class="line">    ray start --address='192.168.8.91:6379' --redis-password='5241590000000000'</span><br><span class="line">  </span><br><span class="line">  Alternatively, use the following Python code:</span><br><span class="line">    import ray</span><br><span class="line">    ray.init(address='auto', _redis_password='5241590000000000')</span><br><span class="line">  </span><br><span class="line">  To connect to this Ray runtime from outside of the cluster, for example to</span><br><span class="line">  connect to a remote cluster from your laptop directly, use the following</span><br><span class="line">  Python code:</span><br><span class="line">    import ray</span><br><span class="line">    ray.init(address='ray://&lt;head_node_ip_address&gt;:10001')</span><br><span class="line">  </span><br><span class="line">  If connection fails, check your firewall settings and network configuration.</span><br><span class="line">  </span><br><span class="line">  To terminate the Ray runtime, run</span><br><span class="line">    ray stop</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li><p><del>在 python 中运行代码（这里用的是 Jupyter Notebook）：</del> 在实际的使用中在这里创建的 ray 服务好像无法被访问到，推荐用上面那种</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ray</span><br><span class="line">ray.init()</span><br></pre></td></tr></table></figure>
+<p>会得到以下的输出结果：</p>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">'node_ip_address'</span>: <span class="string">'192.168.8.91'</span>,</span><br><span class="line"> <span class="string">'raylet_ip_address'</span>: <span class="string">'192.168.8.91'</span>,</span><br><span class="line"> <span class="string">'redis_address'</span>: <span class="string">'192.168.8.91:6379'</span>,</span><br><span class="line"> <span class="string">'object_store_address'</span>: <span class="string">'/tmp/ray/session_2022-02-02_00-19-54_773577_23514/sockets/plasma_store'</span>,</span><br><span class="line"> <span class="string">'raylet_socket_name'</span>: <span class="string">'/tmp/ray/session_2022-02-02_00-19-54_773577_23514/sockets/raylet'</span>,</span><br><span class="line"> <span class="string">'webui_url'</span>: <span class="string">'127.0.0.1:8265'</span>,</span><br><span class="line"> <span class="string">'session_dir'</span>: <span class="string">'/tmp/ray/session_2022-02-02_00-19-54_773577_23514'</span>,</span><br><span class="line"> <span class="string">'metrics_export_port'</span>: <span class="number">65222</span>,</span><br><span class="line"> <span class="string">'node_id'</span>: <span class="string">'895212abb4987a29721226be725ad2c87073b54d40b153e79eb2bf2a'</span>&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="三-用ssh进行端口转发"><a href="#三-用ssh进行端口转发" class="headerlink" title="三. 用ssh进行端口转发"></a>三. 用ssh进行端口转发</h4><ul>
+<li>如果服务器（B）能够通过公网访问到并能开放对应端口（10001），则该操作并不需要。由于笔者这里的服务器（B）是学校的服务器，只能通过 ssh 连接，而且本人也没有管理员权限，因此考虑利用 ssh 进行端口转发：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span> ssh -qnN -L 10001:localhost:10001 $your_username$@$your_ssh_address$ -p $your_ssh_port$</span><br></pre></td></tr></table></figure>
+<ul>
+<li>该命令将服务器的10001端口映射到了本地，以便连接服务器（B）上的 ray 服务</li>
+</ul>
+<h4 id="四-在本地连接"><a href="#四-在本地连接" class="headerlink" title="四. 在本地连接"></a>四. 在本地连接</h4><ul>
+<li>在 python 中利用如下代码连接ray（这里用的是 Jupyter Notebook）：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ray</span><br><span class="line">ray.init(address=<span class="string">'ray://loaclhost:10001'</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果没有进行端口转发则将 localhost 换成对应服务器的 ip 即可</li>
+<li>最终得出如下类似结果即为连接成功：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">ClientContext(dashboard_url=<span class="string">'127.0.0.1:8265'</span>, python_version=<span class="string">'3.7.5'</span>, ray_version=<span class="string">'1.9.2'</span>, ray_commit=<span class="string">'ef593fe5d3c864836b80ae77be32635cef42b537'</span>, protocol_version=<span class="string">'2021-09-22'</span>, _num_clients=<span class="number">1</span>, _context_to_restore=&lt;ray.util.client._ClientContext object at <span class="number">0x0000023ECEED9FC8</span>&gt;)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Ray</category>
+      </categories>
+      <tags>
+        <tag>Ray</tag>
+      </tags>
+  </entry>
+</search>
